@@ -1,0 +1,51 @@
+\mode<presentation>
+\setCJKfamilyfont{yahei}{Microsoft YaHei UI} 
+\newcommand{\yahei}{\CJKfamily{yahei}}
+\setbeamertemplate{background}{
+
+
+\ifnum\thepage=1\relax%
+\begin{mdframed}[
+	linecolor=red!75.24!black, 
+	linewidth=2pt, 
+	backgroundcolor=red!75.24!black, 
+	innertopmargin=10pt, 
+	innerbottommargin=10pt, 
+	leftmargin=-70pt, 
+	rightmargin=0pt]
+	
+	\begin{center}
+		\textcolor{yellow}{\textbf{\yahei \huge MACID组会汇报}}
+	\end{center}
+	
+\end{mdframed}
+
+
+\fi
+
+
+
+}
+
+% Title page
+\defbeamertemplate*{title page}{macid}[1][]
+{ 
+	
+
+
+	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,sep=8pt,#1]{title page header}
+		\usebeamerfont{title}\inserttitle\par%
+	\end{beamercolorbox}%
+
+	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
+		\usebeamerfont{author}\insertauthor%
+	\end{beamercolorbox}
+
+	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{date}
+		\usebeamerfont{date}\insertdate%
+	\end{beamercolorbox}
+
+}
+
+\mode
+<all>
