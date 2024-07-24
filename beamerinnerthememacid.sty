@@ -31,20 +31,18 @@
 \defbeamertemplate*{title page}{macid}[1][]
 { 
 	
+\ \\ \ \\
+	\begin{spacing}{1.5}
+	\begin{center}
+	        \textbf{ \huge \yahei {\textcolor{blue} \inserttitle}}
 
+		\textbf{ \large \yahei {\textcolor{blue} \insertauthor}}
 
-	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,sep=8pt,#1]{title page header}
-		\usebeamerfont{title}\inserttitle\par%
-	\end{beamercolorbox}%
+		\textbf{ \large \yahei {\textcolor{blue} \insertdate}}\\ \ \\
+		\includegraphics[scale=0.5]{zjulogo.png}
+	\end{center}
 
-	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{author}
-		\usebeamerfont{author}\insertauthor%
-	\end{beamercolorbox}
-
-	\begin{beamercolorbox}[wd=12cm,leftskip=3cm,#1]{date}
-		\usebeamerfont{date}\insertdate%
-	\end{beamercolorbox}
-
+	\end{spacing}
 }
 
 \mode
