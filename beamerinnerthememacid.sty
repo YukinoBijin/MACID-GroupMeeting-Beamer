@@ -18,9 +18,17 @@
 		\textcolor{yellow}{\textbf{\yahei \huge MACID组会汇报}}
 	\end{center}
 	
+	
 \end{mdframed}
 
+\else
 
+	
+	
+	\else
+	
+	
+	\fi
 \fi
 
 
@@ -34,16 +42,45 @@
 \ \\ \ \\
 	\begin{spacing}{1.5}
 	\begin{center}
-	        \textbf{ \huge \yahei {\textcolor{blue} \inserttitle}}
+	        \textbf{ \huge \yahei {\textcolor{green!25!blue} \inserttitle}}
 
-		\textbf{ \large \yahei {\textcolor{blue} \insertauthor}}
+		\textbf{ \large \yahei {\textcolor{green!25!blue} \insertauthor}}
 
-		\textbf{ \large \yahei {\textcolor{blue} \insertdate}}\\ \ \\
+		\textbf{ \large \yahei {\textcolor{green!25!blue} \insertdate}}\\ \ \\
 		\includegraphics[scale=0.5]{zjulogo.png}
 	\end{center}
 
 	\end{spacing}
 }
+\defbeamertemplate*{frametitle}{macid}[1][]
+{
+\begin{mdframed}[
+	linecolor=white, 
+	linewidth=2pt, 
+	backgroundcolor=white, 
+	innertopmargin=10pt, 
+	innerbottommargin=5pt, 
+	leftmargin=0pt, 
+	rightmargin=0pt]
+	
+	\begin{center}
+		\textcolor{green!25!blue}{\textbf{\yahei \huge \insertframetitle}}
+	\end{center}
+	
+	
+\end{mdframed}
+\begin{mdframed}[
+	linecolor=white, 
+	linewidth=1pt, 
+	backgroundcolor=green!25!blue, 
+	innertopmargin=0pt, 
+	innerbottommargin=5pt, 
+	leftmargin=-30pt, 
+	rightmargin=-30pt]
+	
 
+	
+\end{mdframed}
+}
 \mode
 <all>
